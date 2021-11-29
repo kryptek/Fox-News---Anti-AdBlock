@@ -1,0 +1,75 @@
+// ==UserScript==
+// @name         Fox News - User Experience Enhancement
+// @version      2021.11
+// @description  Remove the anti-AdBlock. Remove clickbait articles. Optional: remove sidebars
+// @author       Chokobo
+// @match        https://*.foxnews.com/*
+// @match        https://*.foxbusiness.com/*
+// @match        https://*.foxweather.com/*
+// @icon         https://www.google.com/s2/favicons?domain=foxnews.com
+// @require https://gist.github.com/raw/2625891/waitForKeyElements.js
+// @grant        GM_addStyle
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    //Change these variables to cusomize your experience.
+    var disableAntiAdBlock = true;
+    var disableClickBait = true;
+    var disableSidebars = false;
+    var hideComments = false;
+
+
+    //This section handles the Anti-Adblock aspects of the script
+    if (disableAntiAdBlock) {
+
+        waitForKeyElements (".fb", enableScrollingBusinessSite);
+        function enableScrollingBusinessSite (jNode) {
+            GM_addStyle('.fb { overflow: visible !important; }');
+        }
+
+        waitForKeyElements (".fn", enableScrollingMainSite);
+        function enableScrollingMainSite (jNode) {
+            GM_addStyle('.fn { overflow: visible !important; }');
+        }
+
+        waitForKeyElements (".fc-ab-root", removeAntiBanner);
+        function removeAntiBanner (jNode) {
+            jNode.remove ();
+        }
+    }
+
+    //This section handles clickbait removal
+    if (disableClickBait) {
+
+        waitForKeyElements (".vendor-unit", removeFoxClickBait);
+        function removeFoxClickBait (jNode) {
+            jNode.remove ();
+        }
+    }
+
+    //This section handles the removal of the comment section. (Disabled by default)
+    if (hideComments) {
+        waitForKeyElements (".comments", disableCommentsSection);
+        function disableCommentsSection (jNode) {
+            jNode.remove ();
+        }
+    }
+
+
+    //This section handles sidebar removal. (Disabled by default)
+    if (disableSideBars) {
+
+        waitForKeyElements (".sidebar-columns", removeFoxLeftBar);
+        function removeFoxLeftBar (jNode) {
+            jNode.remove ();
+        }
+
+        waitForKeyElements (".sidebar-secondary", removeFoxRightBar);
+        function removeFoxRightBar (jNode) {
+            jNode.remove ();
+        }
+    }
+
+})();
