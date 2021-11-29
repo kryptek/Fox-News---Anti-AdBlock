@@ -1,4 +1,4 @@
-# Fox News - Anti AdBlock
+# Fox News - Anti AdBlock +
 This userscript started out as a way to disable the sites rediculous Anti-AdBlock nag windows.  However, I decided to add the following 4 features.
 
 
