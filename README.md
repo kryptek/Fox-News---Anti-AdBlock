@@ -1,5 +1,5 @@
 # FoxNews-Adblock
-This userscript started out as a way to disable the sites rediculous Anti-AdBlock nag windows.  However I decided to add teh following 4 features.
+This userscript started out as a way to disable the sites rediculous Anti-AdBlock nag windows.  However, I decided to add the following 4 features.
 
 
 ### Features
@@ -18,3 +18,5 @@ This userscript started out as a way to disable the sites rediculous Anti-AdBloc
 2. Create a new script
 3. Paste in the source code and save.
 4. Enjoy
+
+Leave your political BS at the door please.
