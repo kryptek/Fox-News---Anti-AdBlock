@@ -66,7 +66,7 @@
             jNode.remove ();
         }
 
-        waitForKeyElements (".sidebar-secondary", removeFoxRightBar);
+        waitForKeyElements (".sidebar-primary", removeFoxRightBar);
         function removeFoxRightBar (jNode) {
             jNode.remove ();
         }
