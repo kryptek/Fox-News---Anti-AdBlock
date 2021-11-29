@@ -14,13 +14,7 @@ This userscript started out as a way to disable the sites rediculous Anti-AdBloc
 
 ### How to use
 
-1.) Install TamperMonkey [here](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
-
-
-2.) Create a new script
-
-
-3.) Paste in the source code and save.
-
-
-4.) Enjoy
+1. Install TamperMonkey [here](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
+2. Create a new script
+3. Paste in the source code and save.
+4. Enjoy
