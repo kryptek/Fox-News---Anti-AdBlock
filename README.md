@@ -3,7 +3,6 @@ Disables Fox News websites ridiculous anti-adblock nag windows and clickbait art
 
 
 1.) Install TamperMonkey here:
-
 https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
 
 
