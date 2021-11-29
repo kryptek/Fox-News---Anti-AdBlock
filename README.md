@@ -1,5 +1,10 @@
 # FoxNews-Adblock
-Disables Fox News websites ridiculous anti-adblock nag windows and clickbait articles. Plus some other optional features: Disable sidebars, disable user comments
+This userscript started out as a way to disable the sites rediculous Anti-AdBlock nag windows.  However I decided to add teh following 4 features.
+
+- Disable anti-AdBlocker
+- Hide clickbait
+- Hide sidebars (disabled by default)
+- Hide comments (disabled by default)
 
 
 1.) Install TamperMonkey [here](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
