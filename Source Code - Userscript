@@ -59,7 +59,7 @@
 
 
     //This section handles sidebar removal. (Disabled by default)
-    if (disableSideBars) {
+    if (disableSidebars) {
 
         waitForKeyElements (".sidebar-columns", removeFoxLeftBar);
         function removeFoxLeftBar (jNode) {
