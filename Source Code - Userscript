@@ -17,8 +17,8 @@
     //Change these variables to cusomize your experience.
     var disableAntiAdBlock = true;
     var disableClickBait = true;
-    var disableSidebars = false;
-    var hideComments = false;
+    var disableSidebars = true;
+    var hideComments = true;
 
 
     //This section handles the Anti-Adblock aspects of the script
@@ -38,6 +38,23 @@
         function removeAntiBanner (jNode) {
             jNode.remove ();
         }
+
+        waitForKeyElements (".pf-widget", removeNewsletter);
+        function removeNewsletter (jNode) {
+            jNode.remove ();
+        }
+
+        waitForKeyElements (".pre-content", removeTopAds);
+        function removeTopAds (jNode) {
+            jNode.remove ();
+        }
+
+        waitForKeyElements (".ad-container", removeOtherAds);
+        function removeOtherAds (jNode) {
+            jNode.remove ();
+        }
+
+
     }
 
     //This section handles clickbait removal
